@@ -4,7 +4,7 @@ import spotipy
 from flask import Flask, url_for, redirect, session, request
 from spotipy.oauth2 import SpotifyOAuth
 import os
-
+import downloader
 app = Flask(__name__)
 
 # Retrieve client ID and secret from environment variables
@@ -75,7 +75,10 @@ def gettracks():
         if results:
             df = pd.DataFrame(results, columns=["Song Names"])
             df.to_csv('songs.csv', index=False)
-            return "Done"
+            df = pd.read_csv('songs.csv')
+            data = df['Song Names'].tolist()
+            downloader.download(data)
+            return "Download done"
         else:
             return "No tracks found."
     else:
