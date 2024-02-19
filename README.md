@@ -40,7 +40,7 @@ Once you have obtained the API credentials, set them as environment variables na
 To install the required dependencies, run the following command:
 
 ```bash
-python install_packages.py
+python packages.py
 ```
 
 ## Usage
