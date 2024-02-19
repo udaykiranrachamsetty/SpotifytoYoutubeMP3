@@ -6,10 +6,9 @@ requires = [
     'spotipy',
     'html5lib',
     'requests',
-    'requests_html',
     'beautifulsoup4',
-    'youtube_dl',
-    'pathlib',
+    'pytube',
+    'google-api-python-client',
     'pandas',
     'pyarrow'
 ]
