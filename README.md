@@ -57,6 +57,6 @@ python install_packages.py
 
 4. Once authenticated, the application will fetch your saved tracks from Spotify and create a CSV file named `songs.csv`.
 
-5. After the CSV file is generated, the application will download the corresponding audio tracks from YouTube and save them as MP3 files in the `downloads` directory.
+5. After the CSV file is generated, the application will download the corresponding audio tracks from YouTube and save them as MP3 files.
 
 
